@@ -12,6 +12,18 @@
         <h1 v-if="conectado">Estas conectado</h1>
         <p v-if="edad >= 18">Eres mayor de edad</p>
         <p v-else>Eres menor de edad</p>
+
+        <hr>
+        <h2>Lista</h2>
+        <ul>
+            <li v-for="item in lista">{{ item }}</li>
+        </ul>
+        <h2>Lista de objetos</h2>
+        <ul>
+            <li v-for="item in listapersonas">
+                {{ item.nombre }} - {{ item.edad }}
+            </li>
+        </ul>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
