@@ -20,7 +20,27 @@
                 {{item}}
             </li>
         </ul>
+        
+        <h2> Tareas </h2>
+            <hr>
+        <h3>Agregar tarea</h3>
+            <input type="text" placeholder="Tareas" v-model="tarea">
+                <button v-on:click="agregarTarea2" >Agregar tarea</button>
+            <hr>
+        <ul>
+            <li v-for="item in tareas">
+                {{item.titulo}}
+            </li>
+        </ul>
+            <hr>
+        <h3>Tareas completadas</h3>
+        <ul>
+            <li v-for="item in tareasCompletadas">
+                {{item.titulo}}
+            </li>
+        </ul>
     </div>
+
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="main.js"></script>
 </body>
