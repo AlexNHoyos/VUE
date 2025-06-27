@@ -1,6 +1,7 @@
 const app = new Vue({
     el: '#main',
     data: {
+        titulo: 'Hola Vue',
         tarea: null,
         tareas: [
             {titulo: 'Aprender Vue', completado: true},
@@ -34,6 +35,6 @@ const app = new Vue({
 const app2 = new Vue({
     el: '#main2',
     data:{
-        titulo: 'Hola Vue',
+        titulo: app.titulo,
     },
 })
