@@ -26,5 +26,14 @@ const app = new Vue({
         tareasCompletadas(){
             return this.tareas.filter(tarea => tarea.completado);
         },
+        mostrarPorTitulo() {
+            return this.tareas.filter(tarea => tarea.titulo.includes(this.tarea))
+        }
+    }
+})
+const app2 = new Vue({
+    el: '#main2',
+    data:{
+        titulo: 'Hola Vue',
     },
 })
